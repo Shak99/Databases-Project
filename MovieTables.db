@@ -1,0 +1,42 @@
+CREATE TABLE users(
+    u_name varchar(30) not null PRIMARY KEY,
+    u_email varchar(30) not null,
+    u_username varchar(30) not null,
+    u_password decimal(30) not null,
+
+);
+
+CREATE TABLE movie(
+    m_name varchar (100) not null PRIMARY KEY,
+    m_year DATE not null,
+    m_genre varchar(50) not null,
+    m_director varchar(100) not null,
+    m_primaryActors varchar(3) not null,
+    m_rating decimal not null,
+    m_studio varchar(100)
+);
+
+
+CREATE TABLE director(
+    d_directorKey decimal(3) not null PRIMARY KEY,
+    d_name varchar(30) not null,
+    d_birthdate DATE
+);
+
+CREATE TABLE actor(
+    a_actorKey decimal(3) not null PRIMARY KEY,
+    a_name varchar(30) not null,
+    a_birthdate DATE
+);
+
+CREATE TABLE studio(
+    s_name varchar(100) not null PRIMARY KEY,
+    s_location varchar(100) not null
+)
+
+CREATE TABLE suggestionBox(
+    sb_key decimal(3) not null PRIMARY KEY,
+    sb_name(100) not null,
+    sb_year(4) not null,
+    sb_acceptance decimal (1) not null
+)

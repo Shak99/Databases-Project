@@ -2,18 +2,18 @@ CREATE TABLE users(
     u_name varchar(30) not null PRIMARY KEY,
     u_email varchar(30) not null,
     u_username varchar(30) not null,
-    u_password decimal(30) not null,
+    u_password varchar(30) not null,
 
 );
 
 CREATE TABLE movie(
-    m_name varchar (100) not null PRIMARY KEY,
+    m_movieKey decimal(3) not null PRIMARY KEY,
+    m_name varchar (100) not null,
     m_year DATE not null,
     m_genre varchar(50) not null,
-    m_director varchar(100) not null,
-    m_primaryActors varchar(3) not null,
-    m_rating decimal not null,
-    m_studio varchar(100)
+    m_director decimal(3) not null,
+    m_rating decimal(3) not null,
+    m_studio decimal(3)
 );
 
 
@@ -25,12 +25,14 @@ CREATE TABLE director(
 
 CREATE TABLE actor(
     a_actorKey decimal(3) not null PRIMARY KEY,
+    a_movieKey decimal(3) not null,
     a_name varchar(30) not null,
     a_birthdate DATE
 );
 
 CREATE TABLE studio(
-    s_name varchar(100) not null PRIMARY KEY,
+    s_studioKey decimal(3) not null PRIMARY KEY,
+    s_name varchar(100) not null,
     s_location varchar(100) not null
 )
 
@@ -40,3 +42,46 @@ CREATE TABLE suggestionBox(
     sb_year(4) not null,
     sb_acceptance decimal (1) not null
 )
+
+
+
+INSERT INTO movie (
+    m_movieKey,
+    m_name,
+    m_year,
+    m_genre,
+    m_director,
+    m_rating,
+    m_studio
+    )
+
+VALUES
+(1, “Terminator 2: Judgement Day”, 1991, “Action”, 1, 93, 1),
+(2, “The Matrix”, 1999, “Action”, 2, 88, 2),
+(3, “Kill Bill”, 2003, “Action”, 3, 85, 3),
+(4, “The Avengers”, 2012, “Action”, 4, 92, 4),
+(5, “Rush Hour”, 1998, “Action”, 5, 61, 5),
+
+(6, “Sixteen Candles”, 1984, “Coming of Age”, 6, 84, 6),
+(7, “To All the Boys I’ve Loved Before”, 2018, “Coming of Age”, 7, 96, 7),
+(8, “Moonlight”, 2016, “Coming of Age”, 8, 98, 8),
+(9, “10 Things I Hate About You”, 1999, “Coming of Age”, 9, 98, 9),
+(10, “A Bronx Tale”, 1993, “Coming of Age”, 10, 97, 10),
+
+(11, “Harry Potter and the Sorcerer’s Stone”, 2001, “Fantasy/Sci-Fi”, 11, 81, 2),
+(12, “X-Men”, 2000, “Fantasy/Sci-Fi”, 12, 81, 11),
+(13, “Aliens”, 1986, “Fantasy/Sci-Fi”, 13, 97, 11),
+(14, “Pacific Rim”, 2013, “Fantasy/Sci-Fi”, 14, 2),
+(15, “Power Rangers”, 2017, “Fantasy/Sci-Fi”, 15, 49, 12),
+
+(16, “Bird Box”, 2018, “Thriller”, 16, 63, 7),
+(17, “Flatliners”, 2017, “Thriller”, 17, 4, 13),
+(18, “Us”, 2019, “Thriller”, 18, 93, 6),
+(19, “Psycho”, 1960, “Thriller”, 19, 96, 14),
+(20, “Joker”, 2019, “Thriller”, 20, 68, 2),
+
+(21, “Black Panther”, 2018, “Black Movies”, 21, 96, 4),
+(22, “Coffy” 1973, “Black Movies”, 22, 79, 15),
+(23, “Do the Right Thing”, 23, 93, 6),
+(24, “The Best Man”, 1999, “Black Movies”, 24, 72, 6),
+(25, “Boomerang”, 1992, “Black Movies”, 25, 43, 14);

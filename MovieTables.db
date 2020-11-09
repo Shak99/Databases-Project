@@ -34,14 +34,14 @@ CREATE TABLE studio(
     s_studioKey decimal(3) not null PRIMARY KEY,
     s_name varchar(100) not null,
     s_location varchar(100) not null
-)
+);
 
 CREATE TABLE suggestionBox(
     sb_key decimal(3) not null PRIMARY KEY,
-    sb_name(100) not null,
-    sb_year(4) not null,
+    sb_name varchar(100) not null,
+    sb_year decimal(4) not null,
     sb_acceptance decimal (1) not null
-)
+);
 
 
 
@@ -94,48 +94,48 @@ INSERT INTO director (
     )
 
 VALUES
-(1, "James Cameron", 08-16-1954)
-(2, "The Wachowskis", 06-21-1965)
-(3, "Quentin Tarantino", 03-27-1963)
-(4, "Joss Whedon", 06-23-1964)
-(5, "Brett Ratner", 03-28-1969)
-(6, "John Hughes", 02-18-1950)
-(7, "Susan Johnson", 12-18-1970)
-(8, "Barry Jenkins", 11-19-1979)
-(9, "Gil Junger", 11-07-1954)
-(10, "Robert De Niro", 08-17-1943)
-(11, "Chris Columbus", 09-10-1958)
-(12, "Bryan Singer", 09-17-1965)
-(14, "Guillermo del Toro", 10-09-1964)
-(15, "Dean Isrealite", 09-20-1984)
-(16, "Susanne Bier", 04-15-1960)
-(17, "Niels Arden Oplev", 03-26-1961)
-(18, "Jordan Peele", 02-21-2979)
-(19, "Alfred Hitchcock", 08-13-1980)
-(20, "Todd Phillips", 12-20-1970)
-(21, "Ryan Coogler", 05-23-1986)
-(22, "Jack Hill", 01-28-1933)
-(23, "Spike Lee", 03-20-1957)
-(24, "Malcom D. Lee", 01-11-1970)
-(25, "Reginald Hudlin", 12-15-1961)
-(26, "Nick Cassavetes", 05-21-59)
-(27, "Emile Ardolino", 05-09-43)
-(28, "Jon M. Chu", 11-02-79)
-(29, "Gary Marshall", 11-13-34)
-(30, "Will Speck", 12-31-69)
-(31, "Jared Hess", 07-18-70)
-(32, "Chris Miller", 09-23-75)
-(33, "Ben Sharpsteen", 11-04-1895)
-(34, "Wolfgang Reitherman", 06-26-09)
-(35, "Rob Minkoff", 08-11-1962)
-(36, "Bibo Bergeron", 07-14-65)
-(37, "Brenda Chapman", 11-01-1962)
-(38, "Gregory Nava", 05-10-49)
-(39, "Luis Valdez", 06-26-1940)
-(40, "Ramon Menendez", 01-25-1950)
-(41, "Niki Caro", 09-20-1966)
-(42, "John Krasinski", 08-20-1979)
-(43, "Jonathan Demme", 02-22-1944)
+(1, "James Cameron", 08-16-1954),
+(2, "The Wachowskis", 06-21-1965),
+(3, "Quentin Tarantino", 03-27-1963),
+(4, "Joss Whedon", 06-23-1964),
+(5, "Brett Ratner", 03-28-1969),
+(6, "John Hughes", 02-18-1950),
+(7, "Susan Johnson", 12-18-1970),
+(8, "Barry Jenkins", 11-19-1979),
+(9, "Gil Junger", 11-07-1954),
+(10, "Robert De Niro", 08-17-1943),
+(11, "Chris Columbus", 09-10-1958),
+(12, "Bryan Singer", 09-17-1965),
+(14, "Guillermo del Toro", 10-09-1964),
+(15, "Dean Isrealite", 09-20-1984),
+(16, "Susanne Bier", 04-15-1960),
+(17, "Niels Arden Oplev", 03-26-1961),
+(18, "Jordan Peele", 02-21-2979),
+(19, "Alfred Hitchcock", 08-13-1980),
+(20, "Todd Phillips", 12-20-1970),
+(21, "Ryan Coogler", 05-23-1986),
+(22, "Jack Hill", 01-28-1933),
+(23, "Spike Lee", 03-20-1957),
+(24, "Malcom D. Lee", 01-11-1970),
+(25, "Reginald Hudlin", 12-15-1961),
+(26, "Nick Cassavetes", 05-21-59),
+(27, "Emile Ardolino", 05-09-43),
+(28, "Jon M. Chu", 11-02-79),
+(29, "Gary Marshall", 11-13-34),
+(30, "Will Speck", 12-31-69),
+(31, "Jared Hess", 07-18-70),
+(32, "Chris Miller", 09-23-75),
+(33, "Ben Sharpsteen", 11-04-1895),
+(34, "Wolfgang Reitherman", 06-26-09),
+(35, "Rob Minkoff", 08-11-1962),
+(36, "Bibo Bergeron", 07-14-65),
+(37, "Brenda Chapman", 11-01-1962),
+(38, "Gregory Nava", 05-10-49),
+(39, "Luis Valdez", 06-26-1940),
+(40, "Ramon Menendez", 01-25-1950),
+(41, "Niki Caro", 09-20-1966),
+(42, "John Krasinski", 08-20-1979),
+(43, "Jonathan Demme", 02-22-1944),
 (44, "Ruben Fleischer", 08-31-1974)
 
 
@@ -146,37 +146,36 @@ INSERT INTO studio(
     )
 
 VALUES
-(1, "TriStar Pictures", "Culver City, CA")
-(2, "Warner Bros. Pictures", "Burbank, CA")
-(3, "Miramax Films", "New York, NY")
-(4 , "Walt Disney Studios Motion Pictures", "Burbank, CA")
-(5, "New Line Cinema", "Burbank, CA")
-(6, "Universal Pictures", "Universal City, CA")
-(7, "Netflix", "Los Gatos, CA")
-(8, "A24", "New York, NY")
-(9, "Buena Vista Pictures", "Burbank, CA")
-(10, "Savoy Pictures", "Universal City, CA")
-(11, "20th Century Fox", "Los Angeles, CA")
-(12, "Lionsgate", "Santa Monica, CA")
-(13, "Sony Pictures", "Culver City, CA")
-(14, "Paramount Pictures", "Los Angeles, CA")
-(15, "American International Pictures", "Los Angeles, CA")
-(16, "Vestron Pictures", "Hollywood, CA")
-(17, "Ivanhoe Pictures", "Beijing, China")
-(18, "Touchstone Pictures", "Hollywood, CA")
-(19, "Dreamworks SKG", "Glendale, CA")
-(20, "GreenHat Films", "Los Angeles, CA")
-(21, "Access Films", "Glendale, CA")
-(22, "SJC Studios", "Hollywood, CA")
-(23, "Q Film Productins", "Los Angeles, CA")
-(24, "Columbia Pictures Corporation", "Glendale, CA")
-(25, "Platinum Dunes", "Santa Monica, CA")
-(26, "Orion Pictures", "Los Angeles, CA")
+(1, "TriStar Pictures", "Culver City, CA"),
+(2, "Warner Bros. Pictures", "Burbank, CA"),
+(3, "Miramax Films", "New York, NY"),
+(4 , "Walt Disney Studios Motion Pictures", "Burbank, CA"),
+(5, "New Line Cinema", "Burbank, CA"),
+(6, "Universal Pictures", "Universal City, CA"),
+(7, "Netflix", "Los Gatos, CA"),
+(8, "A24", "New York, NY"),
+(9, "Buena Vista Pictures", "Burbank, CA"),
+(10, "Savoy Pictures", "Universal City, CA"),
+(11, "20th Century Fox", "Los Angeles, CA"),
+(12, "Lionsgate", "Santa Monica, CA"),
+(13, "Sony Pictures", "Culver City, CA"),
+(14, "Paramount Pictures", "Los Angeles, CA"),
+(15, "American International Pictures", "Los Angeles, CA"),
+(16, "Vestron Pictures", "Hollywood, CA"),
+(17, "Ivanhoe Pictures", "Beijing, China"),
+(18, "Touchstone Pictures", "Hollywood, CA"),
+(19, "Dreamworks SKG", "Glendale, CA"),
+(20, "GreenHat Films", "Los Angeles, CA"),
+(21, "Access Films", "Glendale, CA"),
+(22, "SJC Studios", "Hollywood, CA"),
+(23, "Q Film Productins", "Los Angeles, CA"),
+(24, "Columbia Pictures Corporation", "Glendale, CA"),
+(25, "Platinum Dunes", "Santa Monica, CA"),
+(26, "Orion Pictures", "Los Angeles, CA"),
 (27, "Pariah Films", "Hollywood, CA")
 
 
 INSERT INTO studio(
-    actor(
     a_actorKey,
     a_movieKey,
     a_name,
@@ -184,94 +183,94 @@ INSERT INTO studio(
     )
 
 VALUES
-(1, 1, "Arnold Schwarzenegger", 07-30-1947)
-(2, 1, "Linda Hamilton", 09-23-1956)
-(3, 1, "Robert Patrick", 11-05-1958)
-(4, 1, "Edward Furlong", 08-02-1977)
-(5, 2, "Keanu Reeves", 09-02-1961)
-(6, 2, "Laurence Fishburne", 07-30-1961)
-(7, 2, "Carrie-Anne Moss", 8-21-1967)
-(8, 3, "Uma Thurman", 4-29-1970)
-(9, 3, "Lucy Liu", 12-02-1968)
-(10, 3, "Vivica A. Fox", 7-30-1964)
-(11, 4, "Robert Downey Jr.", 04-04-1965)
-(12, 4, "Chris Evans", 06-13-1981)
-(13, 4, "Scarlett Johansson", 11-22-1984)
-(14, 4, "Samuel L. Jackson", 12-21-1948)
-(15, 5, "Jackie Chan", 04-07-1954)
-(16, 5, "Chris Tucker", 08-31-1971)
-(17, 6, "Molly Ringwald", 02-18-1968)
-(18, 6, "Paul Dooley", 02-22-1928)
-(19, 6, "Justin Henry", 05-25-1971)
-(20, 6, "Anthony Michael Hall", 04-14-1968)
-(21, 7, "Lana Condor", 05-11-1997)
-(22, 7, "Noah Centineo", 05-09-1996)
-(23, 8, "Trevante Rhodes", 02-10-1990)
-(24, 8, "Ashton Sanders", 10-24-1995)
-(25, 8, "Jharrel Jerome", 10-09-1997)
-(26, 8, "Mahershala Ali", 02-16-1974)
-(27, 9, "Julia Stiles", 03-28-1981)
-(28, 9, "Heath Ledger", 04-04-19979)
-(29, 9, "Joseph Gordon-Levitt", 02-17-1981)
-(30, 9, "Larisa Oleynik", 06-07-1981)
-(31, 10, "Robert De Niro", 08-17-1943)
-(32, 10, "Chazz Palminteri", 05-15-1952)
-(33, 10, "Lillo Brancato, Jr.", 08-30-1976)
-(34, 11, "Daniel Radcliffe", 07-23-1989)
-(35, 11, "Rupert Grint", 08-24-1988)
-(36, 11, "Emma Watson", 04-15-1990)
-(37, 12, "Patrick Stewart", 07-13-1940)
-(38, 12, "Hugh Jackman", 10-12-1968)
-(39, 12, "Ian McKellen", 05-25-1939)
-(40, 13, "Sigourney Weaver", 10-08-1949)
-(41, 14, "Charlie Hunnam", 04-10-1980)
-(42, 14, "Idris Elba", 09-06-1972)
-(43, 14, "Rinko Kikuchi", 01-06-1981)
-(44, 14, "Charlie Day", 02-09-1976)
-(45, 15, "Dacre Montgomery", 11-22-1994)
-(46, 15, "Naomi Scott", 05-06-1993)
-(47, 15, "RJ Cyler", 03-21-1995)
-(48, 15, "Becky G", 03-02-1997)
-(49, 15, "Ludi Lin", 11-11-1987)
-(50, 16, "Sandra Bullock", 07-26-1964)
-(23, 16, "Trevante Rhodes", 02-10-1990)
-(51, 16, "Danielle Macdonald", 05-19-1991)
-(52, 16, "Sarah Paulson", 12-17-1974)
-(53, 17 , "Ellen Page", 02-21-1987)
-(54, 17, "Diego Luna", 12-29-1979)
-(55, 17, "Nina Dobrev", 01-09-1989)
-(56, 17, "James Norton", 07-18-1985)
-(57, 17, "Kiersey Clemons", 12-17-1993)
-(58, 18, "Lupita Nyong'o", 03-01-1983)
-(59, 18, "Winston Duke", 11-15-1986)
-(60, 18, "Elisabeth Moss", 07-24-1982)
-(61, 18, "Tim Heidecker", 02-03-1976)
-(62, 19, "Anthony Perkins", 04-04-1932)
-(63, 19, "Vera Miles", 08-23-1929)
-(64, 20, "Joaquin Phoenix", 10-28-1974)
-(31, 20, "Robert De Niro", 08-17-1943)
-(65, 20, "Zazie Beetz", 05-25-1991)
-(66, 20, "Frances Conroy", 03-15-1953)
-(67, 21, "Chadwick Boseman", 11-29-1976)
-(68, 21, "Michael B. Jordan", 02-09-1987)
-(58, 21, "Lupita Nyong'o", 03-01-1983)
-(69, 21, "Danai Gurira", 02-14-1978)
-(70, 22, "Pam Grier", 05-26-1949)
-(71, 23, "Danny Aiello", 06-20-1933)
-(72, 23, "Giancarlo Esposito", 04-26-1958)
-(73, 23, "Rosie Perez", 09-06-1964)
-(74, 23, "Martin Lawrence", 04-16-1965)
-(75, 23, "Spike Lee", 03-20-1957)
-(76, 24, "Taye Diggs", 01-02-1971)
-(77, 24, "Nia Long", 10-30-1970)
-(78, 24, "Morris Chestnut", 01-01-1969)
-(79, 24, "Harold Perrineau", 08-07-1963)
-(80, 24, "Terrence Howard", 03-11-1969)
-(81, 24, "Sanaa Lathan", 09-19-1971)
-(82, 25, "Eddie Murphy", 04-03-1961)
-(83, 25, "Halle Berry", 08-14-1966)
-(84, 25, "Robin Givens", 11-27-1964)
-(85, 25, "David Alan Grier", 06-30-1956)
-(74, 25, "Martin Lawrence", 04-16-1965)
+(1, 1, "Arnold Schwarzenegger", 07-30-1947),
+(2, 1, "Linda Hamilton", 09-23-1956),
+(3, 1, "Robert Patrick", 11-05-1958),
+(4, 1, "Edward Furlong", 08-02-1977),
+(5, 2, "Keanu Reeves", 09-02-1961),
+(6, 2, "Laurence Fishburne", 07-30-1961),
+(7, 2, "Carrie-Anne Moss", 8-21-1967),
+(8, 3, "Uma Thurman", 4-29-1970),
+(9, 3, "Lucy Liu", 12-02-1968),
+(10, 3, "Vivica A. Fox", 7-30-1964),
+(11, 4, "Robert Downey Jr.", 04-04-1965),
+(12, 4, "Chris Evans", 06-13-1981),
+(13, 4, "Scarlett Johansson", 11-22-1984),
+(14, 4, "Samuel L. Jackson", 12-21-1948),
+(15, 5, "Jackie Chan", 04-07-1954),
+(16, 5, "Chris Tucker", 08-31-1971),
+(17, 6, "Molly Ringwald", 02-18-1968),
+(18, 6, "Paul Dooley", 02-22-1928),
+(19, 6, "Justin Henry", 05-25-1971),
+(20, 6, "Anthony Michael Hall", 04-14-1968),
+(21, 7, "Lana Condor", 05-11-1997),
+(22, 7, "Noah Centineo", 05-09-1996),
+(23, 8, "Trevante Rhodes", 02-10-1990),
+(24, 8, "Ashton Sanders", 10-24-1995),
+(25, 8, "Jharrel Jerome", 10-09-1997),
+(26, 8, "Mahershala Ali", 02-16-1974),
+(27, 9, "Julia Stiles", 03-28-1981),
+(28, 9, "Heath Ledger", 04-04-19979),
+(29, 9, "Joseph Gordon-Levitt", 02-17-1981),
+(30, 9, "Larisa Oleynik", 06-07-1981),
+(31, 10, "Robert De Niro", 08-17-1943),
+(32, 10, "Chazz Palminteri", 05-15-1952),
+(33, 10, "Lillo Brancato, Jr.", 08-30-1976),
+(34, 11, "Daniel Radcliffe", 07-23-1989),
+(35, 11, "Rupert Grint", 08-24-1988),
+(36, 11, "Emma Watson", 04-15-1990),
+(37, 12, "Patrick Stewart", 07-13-1940),
+(38, 12, "Hugh Jackman", 10-12-1968),
+(39, 12, "Ian McKellen", 05-25-1939),
+(40, 13, "Sigourney Weaver", 10-08-1949),
+(41, 14, "Charlie Hunnam", 04-10-1980),
+(42, 14, "Idris Elba", 09-06-1972),
+(43, 14, "Rinko Kikuchi", 01-06-1981),
+(44, 14, "Charlie Day", 02-09-1976),
+(45, 15, "Dacre Montgomery", 11-22-1994),
+(46, 15, "Naomi Scott", 05-06-1993),
+(47, 15, "RJ Cyler", 03-21-1995),
+(48, 15, "Becky G", 03-02-1997),
+(49, 15, "Ludi Lin", 11-11-1987),
+(50, 16, "Sandra Bullock", 07-26-1964),
+(23, 16, "Trevante Rhodes", 02-10-1990),
+(51, 16, "Danielle Macdonald", 05-19-1991),
+(52, 16, "Sarah Paulson", 12-17-1974),
+(53, 17 , "Ellen Page", 02-21-1987),
+(54, 17, "Diego Luna", 12-29-1979),
+(55, 17, "Nina Dobrev", 01-09-1989),
+(56, 17, "James Norton", 07-18-1985),
+(57, 17, "Kiersey Clemons", 12-17-1993),
+(58, 18, "Lupita Nyong'o", 03-01-1983),
+(59, 18, "Winston Duke", 11-15-1986),
+(60, 18, "Elisabeth Moss", 07-24-1982),
+(61, 18, "Tim Heidecker", 02-03-1976),
+(62, 19, "Anthony Perkins", 04-04-1932),
+(63, 19, "Vera Miles", 08-23-1929),
+(64, 20, "Joaquin Phoenix", 10-28-1974),
+(31, 20, "Robert De Niro", 08-17-1943),
+(65, 20, "Zazie Beetz", 05-25-1991),
+(66, 20, "Frances Conroy", 03-15-1953),
+(67, 21, "Chadwick Boseman", 11-29-1976),
+(68, 21, "Michael B. Jordan", 02-09-1987),
+(58, 21, "Lupita Nyong'o", 03-01-1983),
+(69, 21, "Danai Gurira", 02-14-1978),
+(70, 22, "Pam Grier", 05-26-1949),
+(71, 23, "Danny Aiello", 06-20-1933),
+(72, 23, "Giancarlo Esposito", 04-26-1958),
+(73, 23, "Rosie Perez", 09-06-1964),
+(74, 23, "Martin Lawrence", 04-16-1965),
+(75, 23, "Spike Lee", 03-20-1957),
+(76, 24, "Taye Diggs", 01-02-1971),
+(77, 24, "Nia Long", 10-30-1970),
+(78, 24, "Morris Chestnut", 01-01-1969),
+(79, 24, "Harold Perrineau", 08-07-1963),
+(80, 24, "Terrence Howard", 03-11-1969),
+(81, 24, "Sanaa Lathan", 09-19-1971),
+(82, 25, "Eddie Murphy", 04-03-1961),
+(83, 25, "Halle Berry", 08-14-1966),
+(84, 25, "Robin Givens", 11-27-1964),
+(85, 25, "David Alan Grier", 06-30-1956),
+(74, 25, "Martin Lawrence", 04-16-1965),
 (86, 25, "Chris Rock", 02-07-1965)
 

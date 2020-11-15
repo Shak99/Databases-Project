@@ -125,3 +125,61 @@ VALUES ('87', '32', 'Jon Heder', '1977');
 UPDATE director
 SET d_birthdate = 1960
 WHERE d_directorKey = 42;
+
+
+--21. What movie in the category of black movies, was produced in Burbank CA, and was directed by Ryan Coogler?
+SELECT m_name
+FROM movie,
+director,
+studio
+WHERE m_directorkey = d_directorkey AND
+m_studiokey = s_studiokey AND
+s_location = 'Burbank, CA' AND
+d_name = "Ryan Coogler"
+;
+
+
+--22. What Thriller movie had a director born in 1941 and filmed by Netflix?
+SELECT m_name
+FROM movie,
+director,
+studio
+WHERE m_directorkey = d_directorkey AND
+m_studiokey = s_studiokey AND
+s_name = 'Netflix' AND
+d_birthdate = '1941'
+;
+
+--23. Harry Potter and the Sorcerer's Stone was directed by who, for which Studio in Burbank, CA?
+--give the director and studio
+SELECT d_name, s_name
+FROM movie,
+director,
+studio
+WHERE m_directorkey = d_directorkey AND
+m_studiokey = s_studiokey AND 
+s_location = 'Burbank, CA'
+;
+
+--25. Which actor born in 1946, starred in the movie X-men? What year was the movie's director born?
+SELECT a_name, d_birthdate
+FROM movie,
+director,
+actor
+WHERE m_directorkey = d_directorkey AND
+m_moviekey = a_moviekey AND
+s_name = 'Netflix' AND
+a_birthdate = '1946' AND
+m_name = "X-men"
+;
+
+--26. Which actor starred in a movie by Gulliermo del Toro was born in 1957?
+SELECT a_name
+FROM actor,
+movie,
+director
+WHERE m_directorkey = d_directorkey AND
+m_moviekey = a_moviekey AND
+d_name = 'Gullermo del Toro' AND
+a_birthdate = '1957'
+;

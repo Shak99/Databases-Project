@@ -84,7 +84,38 @@ VALUES
 (22, "Coffy", 1973, "Black Movies", 22, 79, 15),
 (23, "Do the Right Thing", 23, 93, 6),
 (24, "The Best Man", 1999, "Black Movies", 24, 72, 6),
-(25, "Boomerang", 1992, "Black Movies", 25, 43, 14);
+(25, "Boomerang", 1992, "Black Movies", 25, 43, 14)
+
+(26,"Titanic",1997,	Romance,13,	89%,14),
+(27,"The Notebook",	2004,Romance,26,53%,5),
+(28,"Dirty Dancing",1987,Romance,27,68%,16),
+(29,"Crazy Rich Asians",2018,Romance,28,91%,17),
+(30,"Pretty Woman",	1990,Romance,29,63%,18),
+
+(31,"Blades of Glory",	2007	Comedy	30	70%	19),
+(32,"The Hangover",	2009,Comedy,20,	78%,20),
+(33,"Nacho LIbre",	2006,Comedy,31,	40%,14),
+(34,"Napolean Dynamite",2004,Comedy,31,71%,	21),
+(35,"21 Jump Street",2012,Comedy,32,84%,22),
+
+(36,:The Lion King",1994,Animation,	35,	93%,4),
+(37,"The Road to El Dorado",2000,Animation,	36,	48%,19),
+(38,"101 Dalmations",1961,Animation,34,	98%,4),
+(39,"The Prince of Egypt",1998,Animation,37,80%,19),
+(40,"Pinocchio",1940,Animation,	33,	100%,4),
+
+(41,"Selena",1997,Hispanic,	38,	64%,23),
+(42,"La Bamba",	1987,Hispanic,39,91%,24),
+(43,"Coco",	2017,Hispanic,39,97%,4),
+(44,"McFarland USA",2015,Hispanic,41,81%,9),
+(45,"Stand and Deliver",1988,Hispanic,40,82%,2),
+
+(46,"Get Out",2017,	Horror,	18,	98%,6),
+(47,"A Quiet Place",2018,Horror,42,	96%,25),
+(48,"The Silence of the Lambs",	1991,Horror,43, 96%,26),
+(49,"Zombieland",2009,Horror,44,89%,27),
+(50,"The Birds",1963,Horror,19,	95%, 6),
+;
 
 
 INSERT INTO director (
@@ -273,4 +304,79 @@ VALUES
 (85, 25, "David Alan Grier", 06-30-1956),
 (74, 25, "Martin Lawrence", 04-16-1965),
 (86, 25, "Chris Rock", 02-07-1965)
+(87,26,	"Leonardo DiCaprio", 11-11-1974),
+(88,26,	"Kate Winslet",	10-05-1975),
+(89,27	"Ryan Gosling",	11-12-80),
+(90,27,	"Rachel McAddams", 11-17-78),
+(91,28,	"Jennnifer Grey",3-26-1960),
+(92,28,	"Patrick Swayze",8-18-1952),
+(93,29,	"Constance Wu",	3-22-1982),
+(94,29, "Henry Golding",2-5-1987),
+(95,30,	"Richard Gere",8-21-49),
+(96,30,	"Julia Roberts",8-28-1967),
+(97,31,	"Will Ferrell",	7-16-1967),
+(98,31,	"Jon Heder",8-26-1977),
+(99,31	"Will Arnett",5-4-1970),
+(100,31,"Amy Poehler",9-16-1971),
+(101,32,"Bradley Cooper",1-5-1975),
+(102,32,"Ed Helms",	1-24-1974),
+(103,32,"Zach Galifinakis",	8-1-1969),
+(104,32,"Jusin Bartha",7-21-1978),
+(105,32,"Ken Jeong",2-13-1979),
+(106,33,"Jack Black",8-28-1969),
+(107,33,"Hector Jimenez",12-14-1973),
+(98,34,	"Jon Heder", 8-26-1977),
+(108,34,"Efren Ramirez",8-2-1973),
+(109,35,"Jonah Hill",12-20-1983),
+(110,35,"Channing Tatum",4-26-1980),
+(111,36,"Mathew Broderick",	5-21-1962),
+(112,36,"Jeremy Irons",	9-19-1948),
+(113,36,"James Earl Jones",	1-17-1931),
+(114,37,"Kevin Kline",8-24-1947),
+(115,37,"Kenneth Branagh", 12-10-1960),
+(116,38,"Rod Taylor",1-11-1930),
+(117,39,"Val Kilmer",12-31-1959),
+(118,40,"Cliff Edwards", 6-14-1895),
+(119,41,"Jennifer Lopez",7-24-1969),
+(120,41,"Jon Seda",	8-14-1970),
+(121,42,"Lou Diamond Phillips",	2-17-1962),
+(122,42,"Esai Morales",	8-1-1962),
+(123,43,"Anthony Gonzlaz",	9-23-2004),
+(124,43,"Gale Garcia Bernal",11-30-1978),
+(125,44,"Kevin Costner",1-18-1955),
+(126,44,"Maria Bello",	4-18-1967),
+(121,45,"Lou Diamond Phillips",	2-17-1962),
+(127,45,"Edward James Olmos",2-24-1947),
+(128,46,"Catherine Keener",	3-23-1959),
+(129,46,"Daniel Kaluuya",5-8-1989),
+(130,47,"Emily Blunt",	5-23),
+(131,47,"Jon Krasinski",8-20-1979),
+(132,48,"Jodie Foster",	11-19-1962),
+(133,48,"Anthony Hopkins",11-31-1937),
+(134,49,"Woody Harrelson"	7-23-1961),
+(135,49,"Jessie Eisenberg",	8-5-1983),
+(136,49,"Emma Stone",11-6-1988),
+(137,49,"Abigail Breslin",	4-14-1996),
+(116,50,"Rod Taylor",1-11-1930)
+
+INSERT INTO users(
+ u_name,
+ u_email,
+ u_username,
+ u_password
+)
+VALUES
+("Shakira",	"itsshakiranotshakeera@gmail.com",	"shakirasmovies",	"mycariscoolerthanyours98"),
+(Karla,	"ijustwannagotodisney@gmail.com",	"ionlywatchdisney",	"steminismbutmakeitdisney")
+
+INSERT INTO suggestionBox(
+sb_key,
+sb_name,
+sb_year,
+sb_acceptence
+)
+VALUES
+(1,	"Harry Potter and the Chamber of Secrets",2002,	"pending"),
+(2,	"Captain America",2011,	"pending"),
+(3,	Up",2010,,"pending")
 

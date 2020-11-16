@@ -183,3 +183,14 @@ m_moviekey = a_moviekey AND
 d_name = 'Gullermo del Toro' AND
 a_birthdate = '1957'
 ;
+
+--27. How many suggestions are there in the suggestion box that are still pending?
+SELECT COUNT(sb_key)
+FROM suggestionBox
+WHERE sb_acceptance = 'pending'
+;
+
+--28. How many users are there?
+SELECT COUNT(u_name)
+FROM users
+;

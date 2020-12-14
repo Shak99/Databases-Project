@@ -7,12 +7,6 @@ CREATE TABLE users(
 );
 
 
-Create table myGuests(
-first varchar(30),
-last varchar (30),
-email varchar(30)
-);
-
 CREATE TABLE movie(
     m_movieKey decimal(3) not null PRIMARY KEY,
     m_name varchar (100) not null,
